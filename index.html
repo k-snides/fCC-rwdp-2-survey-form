@@ -9,6 +9,63 @@
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
 </head>
 <body>
-  
+  <h1 id="title">Some Type of Form</h1>
+
+  <p id="description">This is a description about the form you're about to enter</p>
+
+  <form action="" id="survey-form">
+    <label for="name" id="name-label">Name</label>
+    <input type="text" id="name" placeholder="Enter Your Name" required />
+
+    <label for="email" id="email-label">Email</label>
+    <input type="email" id="email" placeholder="Enter Your Email" required />
+
+    <label for="age" id="number-label">Age</label>
+    <input type="number" id="number" placeholder="Enter Your Age" min="5" max="90"  />
+
+    <label for="dropdown">Please Select The Best Option</label>
+    <select name="choices" id="dropdown">
+      <option disabled selected value>Please Select</option>
+      <option value="">option 1</option>
+      <option value="">option 2</option>
+      <option value="">option 3</option>
+      <option value="">option 4</option>
+      <option value="">option 5</option>
+    </select>
+
+    <p>Please Select One</p>
+    <label for="one">1</label>
+    <input type="radio" id="one" value="1" name="radio-select" />
+    <label for="two">2</label>
+    <input type="radio" id="two" value="2" name="radio-select" />
+    <label for="three">3</label>
+    <input type="radio" id="three" value="3" name="radio-select" />
+
+    <p>Please Select As Many As Your Heart Desires</p>
+    <label for="option-one">
+      <input type="checkbox" id="option-one" value="option-one" name="checkbox-select">
+      Option One
+    </label>
+    <label for="option-two">
+      <input type="checkbox" id="option-two" value="option-two" name="checkbox-select">
+      Option Two
+    </label>
+    <label for="option-three">
+      <input type="checkbox" id="option-three" value="option-three" name="checkbox-select">
+      Option Three
+    </label>
+    <label for="option-four">
+      <input type="checkbox" id="option-four" value="option-four" name="checkbox-select">
+      Option Four
+    </label>
+    <label for="option-five">
+      <input type="checkbox" id="option-five" value="option-five" name="checkbox-select">
+      Option Five
+    </label>
+
+    <textarea name="message" id="message" cols="30" rows="10">Enter any additional comments here</textarea>
+    
+    <button type="submit" id="submit">Submit</button>
+  </form>
 </body>
 </html>
